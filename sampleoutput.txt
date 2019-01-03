@@ -1,0 +1,61 @@
+input:
+python3 DT.py hepatitis-training.dat hepatitis-test.dat
+
+output:
+
+ -----RESULTS-----
+
+Accuracy: 0.8518518518518519 With 23 / 27 correct predictions 
+
+Baseline prediction: ('live', 0.8) 
+
+   HISTOLOGY = True:
+       SGOT = True:
+           BILIRUBIN = True:
+               VARICES = True:
+                   ASCITES = True:
+                       SPIDERS = True:
+                           Class live , prob = 1
+                       SPIDERS = false:
+                           SPLEENPALPABLE = True:
+                               FIRMLIVER = True:
+                                   Class live , prob = 0.8
+                               FIRMLIVER = false:
+                                   BIGLIVER = True:
+                                       Class live , prob = 1
+                                   BIGLIVER = false:
+                                       Class die , prob = 1
+                           SPLEENPALPABLE = false:
+                               Class die , prob = 1
+                   ASCITES = false:
+                       ANOREXIA = True:
+                           Class live , prob = 0.8
+                       ANOREXIA = false:
+                           MALAISE = True:
+                               Class live , prob = 0.8
+                           MALAISE = false:
+                               FATIGUE = True:
+                                   Class live , prob = 0.8
+                               FATIGUE = false:
+                                   ANTIVIRALS = True:
+                                       STEROID = True:
+                                           Class die , prob = 1
+                                       STEROID = false:
+                                           Class live , prob = 1
+                                   ANTIVIRALS = false:
+                                       Class live , prob = 0.8
+               VARICES = false:
+                   FEMALE = True:
+                       Class live , prob = 0.8
+                   FEMALE = false:
+                       AGE = True:
+                           Class live , prob = 1
+                       AGE = false:
+                           Class die , prob = 0.6
+           BILIRUBIN = false:
+               Class live , prob = 1
+       SGOT = false:
+           Class live , prob = 0.6451612903225806
+   HISTOLOGY = false:
+       Class live , prob = 0.9193548387096774
+
