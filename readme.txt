@@ -2,8 +2,8 @@
 INSTRUCTIONS: 
 
 1. Open the terminal
-2. cd to the directory of part2 in the project file   -->  cd path/to/part2
-3. in the folder part2 there will be 7 files --> DT.py,TreeNodes.py, hepatitis-training.dat, hepatitis-test.dat, other_datasets, readme.txt, sampleoutput.txt
+2. cd to the directory
+3. there will be 7 files --> DT.py,TreeNodes.py, hepatitis-training.dat, hepatitis-test.dat, other_datasets, readme.txt, sampleoutput.txt
 
 How to run the algorithm:
 
