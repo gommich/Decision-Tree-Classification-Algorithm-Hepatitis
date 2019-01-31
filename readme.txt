@@ -1,4 +1,9 @@
  
+DESCRIPTION: 
+
+This decision tree uses a modified hepatitis dataset from the UCI repo that has 17 features. Each feature is represented by a boolean value (true/false) . It classifies instances of people as "live" or "die" as a result of the features. 
+
+
 INSTRUCTIONS: 
 
 1. Open the terminal
